@@ -1,6 +1,7 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import pandas as pd
+import csv
 driver = webdriver.Chrome("../chromedriver.exe")
 driver.get('https://free-proxy-list.net/')
 soup = BeautifulSoup(driver.page_source, 'html.parser')
